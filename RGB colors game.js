@@ -8,6 +8,8 @@ var colorDisply = document.getElementById("picked");
 var reset = document.getElementById("reset");
 var modeButton = document.querySelectorAll(".mode");
 var sqarues = [];
+var levelselector = document.querySelector(".dropbtn");
+var myDropdown = document.getElementById("myDropdown");
 
 start(numofrows);
 
@@ -52,6 +54,18 @@ document.addEventListener("click", function(event){
 }}
 });
 
+levelselector.addEventListener("click", function(){
+  myDropdown.classList.toggle("show");
+});
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
 
 function start(numofrows){
 colors = generateRandomColor(numofrows*3);
