@@ -4,7 +4,7 @@ html{
 }
 
 body {
-	 position: relative;
+	position: relative;
 	padding-bottom: 6rem;
     min-height: 100%;
 	background-color: #232323;
@@ -12,6 +12,7 @@ body {
 	font-family:"montserrat" , "Avenir";
 	overflow-x: hidden;
 }
+
 h1{
 font-size: 3rem;
 color: #232323;
@@ -78,8 +79,12 @@ td{
 
 #strip{
 	background-color: white;
+	padding: 0 25% ;
 	height: 30px;
-	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/*text-align: center;*/
 	color: black;
 }
 
@@ -116,6 +121,29 @@ footer {
 	font-weight: bold;
 }
 
+.dropdown{
+	display: inline;
+	position: relative;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  left: 0;
+}
+
+.dropdown-content button{
+	width: 100%;
+}
+
+.show {
+  display: block;
+}
+
 .bigger{
 	 animation: scaling 2s infinite ;
 }
@@ -129,4 +157,20 @@ footer {
 	table{
 		width:80%;
 	}
+
+h1{
+	font-size: 2rem;
+	font-weight: lighter;
+
+}
+
+h2{
+	font-size: 1.5rem;
+	font-weight: lighter;
+}
+
+#strip{
+	padding: 0 5%; ;
+}
+
 }
