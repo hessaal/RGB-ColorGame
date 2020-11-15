@@ -172,5 +172,8 @@ h2{
 #strip{
 	padding: 0 5%; ;
 }
-
+	
+button{
+	font-weight: 400;
+	}
 }
