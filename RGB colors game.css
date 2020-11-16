@@ -55,11 +55,6 @@ button{
 	cursor: pointer;
 }
 
-#msg{
-	display: inline-block;
-
-}
-
 table{
 	width: 50%;
 	border-spacing: 15px;
